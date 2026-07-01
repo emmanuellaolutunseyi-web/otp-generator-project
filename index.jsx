@@ -6,7 +6,7 @@ export const OTPGenerator = () => {
   const intervalRef = useRef(null);
 
   const handleButtonClick = () => {
-    const generatedOtp = Math.floor(500000 + Math.random() * 900000);
+    const generatedOtp = Math.floor(100000 + Math.random() * 900000);
     setOtpText(generatedOtp.toString());
     setSecondsLeft(5);
 
