@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+  min-height:100vh;
+  background-color:#F4F4F5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Segoe UI', Arial, sans-serif;
+}
+#root{
+  color:#18181B;
+}
+
+#otp-display{
+  color:#71717A;
+}
+
+#generate-otp-button{
+  font-size:medium;
+  padding:10px;
+  border-radius:7px;
+  border:none;
+  color:white;
+  background-color:#3B82F6;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+#generate-otp-button:hover:not(:disabled){
+  background-color:#244e91;
+}
+
+#generate-otp-button:disabled{
+  background-color:rgb(113, 113, 148);
+  cursor:not-allowed;
+}
+
+.container{
+  background-color: white;
+  padding:50px;
+  border-radius:12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align:center;
+  width: 400px;
+  
+}
+
+@media screen and (max-width: 768px){
+  .container {
+    padding: 1.5rem 1.5rem;
+    max-width: 90%;
+  }
+
+  #otp-title {
+    font-size: 1.2rem;
+  }
+
+  #otp-display {
+    font-size: 1.8rem;
+  }
+
+  #generate-otp-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}
